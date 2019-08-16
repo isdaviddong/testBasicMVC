@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "PassViewData";
+}
+
+<h2>PassViewData</h2>
+
+<label>Name: @ViewData["name"] </label>
+
+
+<h3>
+    --- View Data List ---
+</h3>
+@foreach (var item in ViewData)
+{
+    <label>@item.Key</label> <span> --> @item.Value   </span><br />
+}
