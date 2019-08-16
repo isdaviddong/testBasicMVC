@@ -1,0 +1,15 @@
+﻿@model List<WebApplication1.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>PassModel</h2>
+
+<h3>
+    --- View Model ---
+</h3>
+@foreach (var item in Model)
+{
+    <span>  @item.StuName @item.Address   @item.TEL </span><br />
+}
